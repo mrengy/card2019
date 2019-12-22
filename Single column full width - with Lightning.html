@@ -551,9 +551,20 @@
   align-items: center;
   overflow-x: hidden;
 
-  margin-left: 50%;
+  margin-left: 100%;
   animation-duration: 4s;
-  /*animation-name: swimonce;*/
+  animation-name: swimonce;
+  position:fixed;
+}
+
+#cant-stop{
+  animation-delay: 4s;
+  top: 10%;
+}
+
+#wont-stop{
+  animation-delay: 5s;
+  top: 20%;
 }
 
 @keyframes swimonce {
@@ -614,21 +625,21 @@
         <!--*|END:IF|*-->
 
         <!-- lightning -->
-        <div class="lightning-container">
+        <div class="lightning-container" id="cant-stop">
           <img src="https://gallery.mailchimp.com/53424465ed1e05bf0fecc35b1/images/9df4b301-18f7-4f71-8cc4-27740b1e6130.png" class="lightning" />
           <hr />
           <div class="arrow">
           </div>
-          <div id="cant-stop" class="banner">
+          <div class="banner">
             Can't stop
           </div>
         </div>
-        <div class="lightning-container">
+        <div class="lightning-container" id="wont-stop">
           <img src="https://gallery.mailchimp.com/53424465ed1e05bf0fecc35b1/images/9df4b301-18f7-4f71-8cc4-27740b1e6130.png" class="lightning" />
           <hr />
           <div class="arrow">
           </div>
-          <div id="wont-stop" class="banner">
+          <div class="banner">
             Won't stop
           </div>
         </div>
