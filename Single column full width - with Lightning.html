@@ -551,9 +551,9 @@
   align-items: center;
   overflow-x: hidden;
 
-  margin-left: 100%;
+  margin-left: 50%;
   animation-duration: 4s;
-  animation-name: swimonce;
+  /*animation-name: swimonce;*/
 }
 
 @keyframes swimonce {
@@ -570,6 +570,21 @@
   /* height: 60px; */
 }
 
+.lightning-container hr{
+  color: #000;
+  width: 4em;
+  padding: 0;
+  margin: 0;
+}
+
+.arrow{
+  border-right: 16px solid red;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  width: 0;
+  height: 0;
+}
+
 .banner{
   font-family: Helvetica;
   font-size: 16px;
@@ -578,6 +593,7 @@
   background: red;
   color: white;
   text-align: center;
+  padding: .2em;
 }
 
 .lightning{
@@ -600,12 +616,18 @@
         <!-- lightning -->
         <div class="lightning-container">
           <img src="https://gallery.mailchimp.com/53424465ed1e05bf0fecc35b1/images/9df4b301-18f7-4f71-8cc4-27740b1e6130.png" class="lightning" />
+          <hr />
+          <div class="arrow">
+          </div>
           <div id="cant-stop" class="banner">
             Can't stop
           </div>
         </div>
         <div class="lightning-container">
           <img src="https://gallery.mailchimp.com/53424465ed1e05bf0fecc35b1/images/9df4b301-18f7-4f71-8cc4-27740b1e6130.png" class="lightning" />
+          <hr />
+          <div class="arrow">
+          </div>
           <div id="wont-stop" class="banner">
             Won't stop
           </div>
