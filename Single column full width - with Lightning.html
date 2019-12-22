@@ -545,14 +545,25 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-    -webkit-flex-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    /*justify-content: center;*/
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   overflow-x: hidden;
 
   margin-left: 100%;
+  animation-duration: 4s;
+  animation-name: swimonce;
+}
+
+@keyframes swimonce {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: -30%;
+  }
 }
 
 .lightning-container div, .lightning-container img{
@@ -565,6 +576,7 @@
   line-height: 100%;
   position: relative;
   background: red;
+  color: white;
   text-align: center;
 }
 
